@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int solution(int X, int Y, int D){
-	int z = Y-X;
-	int w = z/D;
-	if((X+D*w)>=Y)
+	int z = Y-X;   // taking distance
+	int w = z/D;   // calculating jump
+	if((X+D*w)>=Y) // we are dealing with integers so it might be w+1
 		return w;
 	else
 		return w+1;
