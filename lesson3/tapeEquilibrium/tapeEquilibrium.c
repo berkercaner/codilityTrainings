@@ -8,10 +8,10 @@ int solution(int A[], int N){
 		return abs(A[0]-A[1]);
 	
 	
-	for(int i=0; i<N; i++)
+	for(int i=0; i<N; i++) // find the sum of the array
 		total += A[i];
 	
-	for(int i=0; i<N; i++){
+	for(int i=0; i<N; i++){	// for every value of i it will divide the array with left and right
 		leftsum += A[i];
 		rightsum = total - leftsum;
 		diff = abs(leftsum-rightsum);
