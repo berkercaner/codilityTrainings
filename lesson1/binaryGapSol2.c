@@ -8,30 +8,30 @@ int solution(int N){
 	int countGap = 0;
 	
 	
-	while(tempN > 0){
+	while(tempN > 0){  // count digits
 		tempN /= 2;
 		i++;
 	}
 	
-	int *array = (int *) malloc(sizeof(int)*(i-1));
+	int *array = (int *) malloc(sizeof(int)*(i-1)); // array is created with the element number of digit count
 	i = 0;
 	
-	while(N > 0){
+	while(N > 0){ // dec to bin
 		array[i] = N % 2;
 		N /= 2;
 		i++;
 	}
 	
-	while(array[j] == 0)
+	while(array[j] == 0) // skip the first 0s
 		j++;
 		
 	for(k = j; k < i; k++){
-		if(array[k] == 1){
+		if(array[k] == 1){ 		//stop counting if there is 1
 			if(initialGap < countGap)
 				initialGap = countGap;
 			countGap = 0;
 		}
-		else{
+		else{					//start counting if there is 0
 			countGap++;
 		}
 	}

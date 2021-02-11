@@ -5,9 +5,9 @@
 int solution(int N){
 	int countGap = 0;
 	int initialGap = -1;
-	while(N % 2 == 0)
+	while(N % 2 == 0) // skip first 0s
 		N /= 2;
-	while(N > 0){
+	while(N > 0){	// count 0s without taking it to array or linked listed
 		if(N % 2 == 1){
 			if(initialGap < countGap)
 				initialGap = countGap;

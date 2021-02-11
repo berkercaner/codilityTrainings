@@ -17,11 +17,13 @@ int decToBin(int N){
 	int initialGap = -1;
 	mainNode = (struct node*) malloc(sizeof(struct node));
 	
-	mainNode->value = N%2;
+	/* first node is created with the value of the first digit */
+	mainNode->value = N%2; 
 	mainNode->next = NULL;
 	hold = mainNode;
 	N/=2;
 	
+	/* next nodes will be created until the binary representation of the value is completed */
 	while(N>0){
 		tmp = (struct node*)malloc(sizeof(struct node));
 		tmp->value = N%2;
@@ -32,16 +34,17 @@ int decToBin(int N){
 	}
 	
 	struct node* binNode = mainNode;
-	while(binNode->value == 0)
+	
+	while(binNode->value == 0)  // gap must be between two 1s, so that every 0s in first place should be skipped.
 		binNode =  binNode->next;
 	while(binNode){
-		if(binNode->value == 1){
+		if(binNode->value == 1){   // when there is '1' stop counting
 			if(initialGap < gapCount)
 				initialGap = gapCount;
 			gapCount = 0;
 			binNode = binNode->next;
 		}
-		else if(binNode->value == 0){
+		else if(binNode->value == 0){ // when there is '0' start counting
 			gapCount++;
 			binNode = binNode->next;
 		}
