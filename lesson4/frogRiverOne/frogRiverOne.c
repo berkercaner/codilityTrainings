@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*########### 100 SCORE ##############*/
 int solution(int X,int A[], int N){
 	int i,checkA[X];
 	int sum = 0, total;
