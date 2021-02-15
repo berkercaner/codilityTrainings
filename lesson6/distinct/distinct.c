@@ -7,13 +7,6 @@ struct checkElement{
 
 int solution(int A[], int N){
 	int negCount = 0, posCount = 0, isSame = A[0];
-	
-	for(int i=1; i<N; i++){
-		isSame ^= A[i];
-	}
-	if(isSame == 0)
-		return 0;
-	
 	checkElement.checkNeg = (int*) calloc(maxValue,sizeof(int));
 	checkElement.checkPos = (int*) calloc(maxValue,sizeof(int));
 	
