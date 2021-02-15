@@ -1,3 +1,4 @@
+/*method is counting all the zeros that comes before all the ones*/
 int solution(int A[], int N){
 	int ones = 0, i = 0, j = 0;
 	int zeroCount = 0, preZeroCount =0, result = 0;
