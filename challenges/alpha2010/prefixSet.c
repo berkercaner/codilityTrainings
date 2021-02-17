@@ -7,5 +7,6 @@ int solution(int A[], int N){
 			p = i;
 		}
 	}
+	free(checkA);
 	return p;
 }
