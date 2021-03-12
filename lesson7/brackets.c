@@ -21,13 +21,6 @@ int solution(char *S){
 		return 0;
 	
 	for(int i=0; i<N; i++){
-		if(S[i] == '(')
-			openP++;
-		if(S[i] == '[')
-			openS++;
-		if(S[i] == '{')
-			openC++;
-		
 		if(S[i] == ')')	
 			if(S[i-1] == '[' || S[i-1] == '{' || openP == 0)
 				return 0;
@@ -43,6 +36,13 @@ int solution(char *S){
 				return 0;
 			else
 				openC--;
+				
+		if(S[i] == '(')
+			openP++;
+		if(S[i] == '[')
+			openS++;
+		if(S[i] == '{')
+			openC++;
 	}	
 	
 	if(openP == 0 && openP == 0 && openS == 0)
