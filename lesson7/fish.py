@@ -4,7 +4,7 @@ def solution(A,B):
 	n  = len(A)
 	for i in range(n):
 		if B[i] == 1:
-			stack.append(A[i]
+			stack.append(A[i])
 		else:
 			while len(stack) > 0: #if there is a fish moving upwards
 				if stack[-1] < A[i]: #if size of moving downwards fish greater
