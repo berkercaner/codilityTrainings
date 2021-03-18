@@ -6,9 +6,11 @@ def solution(A,B):
 		if B[i] == 1:
 			stack.append(A[i]
 		else:
-			if len(stack) > 0: #if there is a fish moving upwards
+			while len(stack) > 0: #if there is a fish moving upwards
 				if stack[-1] < A[i]: #if size of moving downwards fish greater
 					stack.pop() #fish in the stack will be eaten
+				else:
+					break
 			else:
 				left += 1
 	
