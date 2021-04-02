@@ -1,3 +1,7 @@
+/*
+Question's URL = https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
+*/
+
 int cmpFunc(const void* a, const void* b)
 	return (*(int*)a - *(int*)b);
 	

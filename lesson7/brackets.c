@@ -1,4 +1,7 @@
 #include <string.h>
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+*/
 
 int solution(char *S){
 /*

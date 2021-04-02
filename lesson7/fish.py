@@ -1,3 +1,6 @@
+'''
+	Question's URL => https://app.codility.com/programmers/lessons/7-stacks_and_queues/fish/
+'''
 def solution(A,B):
 	left = 0
 	stack = [] #fish stack for moving upwards

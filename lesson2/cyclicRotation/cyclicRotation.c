@@ -1,3 +1,7 @@
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/2-arrays/cyclic_rotation/
+*/
+
 struct Results solution(int A[], int N, int K){ // K means how many times will be shifted
 	struct Results temp;
 	int counter,i,minShift;

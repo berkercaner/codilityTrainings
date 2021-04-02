@@ -1,3 +1,8 @@
+
+/*
+	Question's URL ==> https://app.codility.com/programmers/lessons/6-sorting/distinct/
+*/
+
 #define maxValue 1000000  // 1000000 is the max value of an element of the array A
 
 struct checkElement{

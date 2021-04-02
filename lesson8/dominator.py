@@ -1,3 +1,6 @@
+'''
+	Question's URL => https://app.codility.com/programmers/lessons/8-leader/dominator/
+'''
 def getKey(val,dic):
 	for key, value in dic.items():
 		if value == val:

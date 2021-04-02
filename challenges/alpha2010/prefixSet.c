@@ -1,3 +1,7 @@
+/*
+	https://app.codility.com/programmers/task/prefix_set/
+*/
+
 int solution(int A[], int N){
 	int* checkA = calloc(N,sizeof(int));
 	int i, p = 0;

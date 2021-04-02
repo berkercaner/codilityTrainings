@@ -1,4 +1,7 @@
 
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/4-counting_elements/max_counters/
+*/
 struct Results solution(int N, int A[], int M){
 	struct Results result;
 	int holdIdx = 0, i;

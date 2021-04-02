@@ -1,5 +1,9 @@
 #include <string.h>
 #include <stdlib.h>
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/5-prefix_sums/genomic_range_query/
+*/
+
 struct prefixSum{
 	int *value;
 };

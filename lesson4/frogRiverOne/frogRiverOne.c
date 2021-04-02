@@ -1,5 +1,7 @@
 #include <stdio.h>
-/*########### 100 SCORE ##############*/
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/4-counting_elements/frog_river_one/
+*/
 int solution(int X,int A[], int N){
 	int i,checkA[X];
 	int sum = 0, total;

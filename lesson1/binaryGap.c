@@ -1,7 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+*/
 
 struct node{
 	int value;

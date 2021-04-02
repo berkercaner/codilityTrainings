@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/3-time_complexity/tape_equilibrium/
+*/
 int solution(int A[], int N){
 	int total = 0, leftsum = 0, rightsum = 0;
 	int min = 1000000000, diff = 0;

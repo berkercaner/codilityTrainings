@@ -1,3 +1,7 @@
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/6-sorting/number_of_disc_intersections/
+*/
+
 int cmpfunc(const void *a, const void *b){
 	return(*(int*)a - *(int*)b);
 }

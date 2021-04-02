@@ -1,3 +1,7 @@
+'''
+	Question's URL = https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/
+'''
+
 def getMax(v1,v2):
 	if v1>=v2:
 		return v1

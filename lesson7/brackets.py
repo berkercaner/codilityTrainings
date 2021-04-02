@@ -1,3 +1,7 @@
+'''
+ Question's URL => https://app.codility.com/programmers/lessons/7-stacks_and_queues/brackets/
+'''
+
 def solution(S):
 	#condition from the question
 	if len(S) == 0:

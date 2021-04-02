@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+*/
 int solution(int N){
 	int tempN = N;
 	int j = 0; int i = 0; int k;

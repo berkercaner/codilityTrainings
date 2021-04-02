@@ -1,3 +1,8 @@
+
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/5-prefix_sums/min_avg_two_slice/
+*/
+
 int solution(int A[], int N){
 	int p = 0;
 	float min = 9999999.0, avg;

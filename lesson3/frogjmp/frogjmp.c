@@ -1,3 +1,6 @@
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/3-time_complexity/frog_jmp/
+*/
 
 int solution(int X, int Y, int D){
 	int z = Y-X;   // taking distance

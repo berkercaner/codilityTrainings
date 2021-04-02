@@ -1,3 +1,7 @@
+/*
+	question's URL => https://app.codility.com/programmers/lessons/4-counting_elements/perm_check/
+*/
+
 int solution(int A[], int N){
 	int sum = 0, sum_Ref = 0;
 	long long perm = 1, perm_Ref = 1;

@@ -1,3 +1,9 @@
+
+/*
+	Question's URL => https://app.codility.com/programmers/lessons/5-prefix_sums/passing_cars/
+*/
+
+
 /*method is counting all the zeros that comes before all the ones*/
 
 
